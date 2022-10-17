@@ -1,1 +1,3 @@
 # bioinfo
+The program is designed to clean up paired reads obtained by DNA sequencing with an Illumina device from reads containing the symbol "n". Because most of the reads we've worked on have "n" in the third position, this program cuts off the first three characters from each read. After that, only those pairs of reads that do not contain "n" are written to the outgoing files.
+The program is written in the "Perl" language, so a Perl interpreter is required to use it. Also, the program cannot work with large files - in case of a significant amount of initial reads, it is recommended to split the files into parts no larger than 1 GB.
